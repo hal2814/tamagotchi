@@ -1,0 +1,21 @@
+<h1>Tamagotchi</h1>
+
+<!-- <h2> Your Tomagotchi's Food: <%= @food_display %> Sleep: <%= @rest_display %> Happiness: <%= @fun_display %></h2> -->
+
+<h2> Your Tomagotchi's <%= @display %></h2>
+
+
+<img src="img/neutral.gif" id="neutral">
+
+<form action="/input">
+  <div class="form-group">
+    <label for="doThing">What do you want to do?</label>
+    <select class="form-control" id="doThing">
+      <option>Feed</option>
+      <option>Play</option>
+      <option>Rest</option>
+    </select>
+  </div>
+
+<button type="submit" class="btn btn-success">go</button>
+</form>
