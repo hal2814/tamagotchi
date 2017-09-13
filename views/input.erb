@@ -7,13 +7,13 @@
 
 <img src="img/neutral.gif" id="neutral">
 
-<form action="/input">
+<form action="/output" method="post">
   <div class="form-group">
     <label for="doThing">What do you want to do?</label>
-    <select class="form-control" id="doThing">
-      <option>Feed</option>
-      <option>Play</option>
-      <option>Rest</option>
+    <select class="form-control" name="doThing">
+      <option value="feed">Feed</option>
+      <option value="play">Play</option>
+      <option value="rest">Rest</option>
     </select>
   </div>
 

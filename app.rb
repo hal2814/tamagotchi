@@ -7,16 +7,30 @@ require('pry')
 
 tom = Tomagotchi.new()
 get('/') do
+
+  # @choice = params.fetch("#doThing")
+  # if @choice == "feed"
+  #   tom.feed
+  # elsif @choice == "play"
+  #   tom.play
+  # elsif @choice == "rest"
+  #   tom.rest
+  # end
+  # @display = tom.display
+
+  erb(:input)
+end
+
+post('/output') do
   @choice = params.fetch("#doThing")
 
-  if @choice == "Feed"
+  if @choice == "feed"
     tom.feed
-  elsif @choice == "Play"
+  elsif @choice == "play"
     tom.play
-  elsif @choice == "Rest"
+  elsif @choice == "rest"
     tom.rest
   end
   @display = tom.display
-
-  erb(:input)
+  erb(:output)
 end

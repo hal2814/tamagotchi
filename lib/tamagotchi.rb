@@ -30,6 +30,16 @@ class Tomagotchi
     return "play"
   end
 
+  def choice(string)
+    if string == "feed"
+      return "feed"
+    elsif string == "rest"
+      return "rest"
+    elsif string == "play"
+      return "play"
+    end
+  end
+
   def display
     return "food: #{@food} sleep: #{@energy} fun: #{@fun}"
   end
